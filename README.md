@@ -48,7 +48,7 @@ To integrate and use Chrome’s **Built-in AI APIs** (Prompt, Writer, Summarizer
 
 ### Browser & API setup
 - Use **Google Chrome (or Chrome Canary)** with Gemini Nano support.
-- Enable experimental flags if needed: https://developer.chrome.com/docs/ai/built-in
+- Enable experimental flags: https://developer.chrome.com/docs/ai/built-in (Write, Rewrite, Summarize, Proofread, Prompt)
 - Chrome must be signed in with a Google account and have on-device AI enabled.
 - The app must run directly in the browser (not server-side) when invoking built-in AI features.
 
