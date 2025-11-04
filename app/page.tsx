@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import DOCUMENTAREAIMAGE from "../public/document-area-image.png";
 import { useMemo } from "react";
 
-import { BookOpen, Code, Contact, Home, LinkIcon } from "lucide-react";
+import { BookOpen, Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -26,24 +26,6 @@ export default function LandingPage() {
                 icon: BookOpen,
                 href: "/documentation",
                 active: pathname === "/documentation",
-            },
-            {
-                label: "About",
-                icon: Contact,
-                href: "/about",
-                active: pathname === "/about",
-            },
-            {
-                label: "Acknowledgements",
-                icon: Code,
-                href: "/acknowledgements",
-                active: pathname === "/acknowledgements",
-            },
-            {
-                label: "Resources",
-                icon: LinkIcon,
-                href: "/resources",
-                active: pathname === "/resources",
             },
         ],
         [pathname]

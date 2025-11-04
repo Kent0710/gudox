@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "./ui/button";
-import { BookOpen, ChevronDown, Code, Contact, Home, LinkIcon, LogOut, User } from "lucide-react";
+import { BookOpen, ChevronDown,Home, LogOut, User } from "lucide-react";
 import Link from "next/link";
 
 import {
@@ -43,24 +43,6 @@ export default function Header({ className }: HeaderProps) {
                 icon: BookOpen,
                 href: "/documentation",
                 active: pathname === "/documentation",
-            },
-            {
-                label: "About",
-                icon: Contact,
-                href: "/about",
-                active: pathname === "/about",
-            },
-            {
-                label: 'Acknowledgements',
-                icon: Code,
-                href: '/acknowledgements',
-                active: pathname === '/acknowledgements',
-            },
-            {
-                label: 'Resources',
-                icon: LinkIcon,
-                href: '/resources',
-                active: pathname === '/resources',
             },
         ],
         [pathname]
