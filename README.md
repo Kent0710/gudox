@@ -70,4 +70,4 @@ To integrate and use Chrome’s **Built-in AI APIs** (Prompt, Writer, Summarizer
 ---
 
 ## What's next for gudox
-Since I focused on the version control features for this, the next step is to add more features in the document writing part such as more formatting options and realtime collaboration. 
+Since I focused on the version control features and the integration of google chrome built-in ai for this, the next step is to add more features in the document writing part such as more formatting options and realtime collaboration. 
