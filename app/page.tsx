@@ -32,7 +32,7 @@ export default function LandingPage() {
     );
 
     return (
-        <div className="grid grid-cols-2 h-dvh text-blue-600 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-dvh text-blue-600 ">
             {/* left section  */}
             <section className="p-10">
                 <nav>
@@ -65,17 +65,17 @@ export default function LandingPage() {
                         alt="Godux Logo"
                         width={1000}
                         height={1000}
-                        className="w-[10rem] h-[10rem]"
+                        className="w-[4rem] sm:w-[7rem] lg:w-[10rem] h-[4rem] sm:h-[7rem] lg:h-[10rem]"
                     />
                     <p
-                        className="text-[10rem] 
+                        className="text-[4rem] sm:text-[8rem] lg:text-[10rem] 
                     font-poetsen-one
                     "
                     >
                         udox
                     </p>
                 </div>
-                <p className="font-medium text-2xl indent-[6rem]">
+                <p className="font-medium sm:text-lg lg:text-2xl lg:indent-[6rem]">
                     Git-like experience for research paper writing, powered by
                     Chrome&apos;s built-in AI. Official entry to Google Chrome
                     Built-in AI Challenge 2025.
@@ -91,7 +91,7 @@ export default function LandingPage() {
             </section>
 
             {/* right section  */}
-            <section className="flex flex-col items-center justify-center p-10 bg-primary text-primary-foreground rounded-l-4xl">
+            <section className="flex flex-col items-center justify-center p-10 bg-primary text-primary-foreground rounded-t-4xl lg:rounded-l-4xl">
                 <div className="mb-16">
                     <p className="text-3xl font-poetsen-one font-extrabold  text-center">
                         WHERE RESEARCH EVOLVES LIKE CODE.
@@ -108,7 +108,7 @@ export default function LandingPage() {
                     alt="document area image"
                     width={1000}
                     height={1000}
-                    className="w-[50rem] h-auto border rounded-2xl shadow-md p-4 bg-white"
+                    className="w-[50rem] h-auto border rounded-2xl shadow-md p-4 bg-white hidden md:block"
                 />
             </section>
         </div>
