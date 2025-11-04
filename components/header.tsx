@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "./ui/button";
-import { BookOpen, ChevronDown,Home, LogOut, User } from "lucide-react";
+import { BookOpen, ChevronDown, Home, LogOut, User } from "lucide-react";
 import Link from "next/link";
 
 import {
@@ -66,7 +66,7 @@ export default function Header({ className }: HeaderProps) {
         >
             {/* left section  */}
             <section className="flex items-center gap-16">
-                <div className="flex items-center gap-2">
+                <Link className="flex items-center gap-2" href={"/"}>
                     <Image
                         src={GODUXLOGO}
                         alt="Godux Logo"
@@ -75,7 +75,7 @@ export default function Header({ className }: HeaderProps) {
                         className="w-5 h-5"
                     />
                     <p className="font-bold text-blue-600">gudox</p>
-                </div>
+                </Link>
 
                 <ul className="flex items-center gap-6">
                     {navs.map((nav) => (
