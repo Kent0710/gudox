@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gudox
 
-## Getting Started
+**Gudox** is a web app that brings Git-like version control to research and collaborative writing.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Inspiration  
+I built Gudox after struggling to manage document revisions with my research team in high school. Google Docs’ history wasn’t enough — we needed real version control for writing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What it does  
+- Track every edit like a commit  
+- Create and merge branches for drafts  
+- Revert to past versions instantly  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Use Google Chrome’s built-in AI to:  
+- Write  
+- Rewrite  
+- Summarize  
+- Proofread  
+- Auto-generate commit titles & descriptions  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Built with  
+- Next.js  
+- Firebase  
+- Vercel  
+- shadcn/ui  
+- Chrome Built-in AI  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Try it out  
+[https://gudox.vercel.app/](https://gudox.vercel.app/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tagline  
+**WHERE RESEARCH EVOLVES LIKE CODE !**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Requirements to run the AI features  
+
+To integrate and use Chrome’s **Built-in AI APIs** (Prompt, Writer, Summarizer, Rewriter, Translator, and Proofreader APIs), ensure the following setup:
+
+### Browser & API setup
+- Use **Google Chrome (or Chrome Canary)** with Gemini Nano support.
+- Enable experimental flags if needed: https://developer.chrome.com/docs/ai/built-in
+- Chrome must be signed in with a Google account and have on-device AI enabled.
+- The app must run directly in the browser (not server-side) when invoking built-in AI features.
+
+### Minimum system requirements (from [developer.chrome.com](https://developer.chrome.com/docs/ai/prompt-api))
+- **Operating system:** Windows 10/11, macOS 13 (Ventura) or later, Linux, or ChromeOS (Chromebook Plus).
+- **Free storage:** At least **22 GB** of available space on the same drive as your Chrome profile.
+- **Memory / GPU:**
+  - GPU: ≥ 4 GB VRAM  
+  - CPU-only: ≥ 16 GB RAM and ≥ 4 cores
+- **Network:** Stable and preferably unmetered internet connection for initial model downloads.
+- **Device type:** Desktop/laptop (mobile browsers not currently supported).
+- **Model persistence:** If disk space drops below ~10 GB, Chrome may delete the Gemini Nano model and re-download it later.
+
+---
+
+## Usage Instructions  
+- Test using the vercel deployment on a **laptop/desktop system** 
