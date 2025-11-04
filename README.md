@@ -5,7 +5,7 @@
 ---
 
 ## Inspiration  
-I built Gudox after struggling to manage document revisions with my research team in high school. Google Docs’ history wasn’t enough — we needed real version control for writing.
+I built Gudox after struggling to manage document revisions with my research team in high school. Google Docs’ history wasn’t enough we needed real version control for writing.
 
 ---
 
@@ -19,7 +19,7 @@ Use Google Chrome’s built-in AI to:
 - Rewrite  
 - Summarize  
 - Proofread  
-- Auto-generate commit titles & descriptions  
+- Auto-generate commit titles & descriptions
 
 ---
 
@@ -65,4 +65,9 @@ To integrate and use Chrome’s **Built-in AI APIs** (Prompt, Writer, Summarizer
 ---
 
 ## Usage Instructions  
-- Test using the vercel deployment on a **laptop/desktop system** 
+- Test using the vercel deployment on a **laptop/desktop system**
+
+---
+
+## What's next for gudox
+Since I focused on the version control features for this, the next step is to add more features in the document writing part such as more formatting options and realtime collaboration. 
