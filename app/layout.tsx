@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poetsen_One,} from "next/font/google";
+import { Geist, Geist_Mono, Poetsen_One } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/providers/theme-provider";
+
+import { Analytics } from "@vercel/analytics/next";
 
 import NextTopLoader from "nextjs-toploader";
 
@@ -20,10 +22,10 @@ const poetsenOne = Poetsen_One({
     variable: "--font-poetsen-one",
     subsets: ["latin"],
     weight: ["400"],
-})
+});
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://godux.vercel.app/"), 
+    metadataBase: new URL("https://gudox.vercel.app/"),
     title: "gudox",
     description:
         "Git-like experience for research paper writing, powered by Chrome's built-in AI. Official entry to Google Chrome Built-in AI Challenge 2025.",
@@ -68,6 +70,7 @@ export default function RootLayout({
                 >
                     <NextTopLoader />
                     {children}
+                    <Analytics />
                     <Toaster />
                 </ThemeProvider>
             </body>
